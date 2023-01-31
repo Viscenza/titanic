@@ -1,0 +1,29 @@
+1. Objectif : 
+    l'Objectif ici est de predire les passagers qui ont une plus grande chance de survie en prenant en compte certains critères apres analyse du dataset 
+2. Exploration et Analyse des données 
+=> Nous avons un dataset de 891 lignes et 12 colonnes pour l'entrainement du model 
+=> Valeurs manquantes : Il y a plusieurs valeurs manquantes sur les variables suivantes :
+    Age : 177 soit 19% des valeurs 
+    Cabin : 687 soit 77% des valeurs 
+    Embarked : 2 soit 2 % des valeurs
+=> Verification des hypothèses données :  
+    h1 : La classe 1 compte le plus de survivants 
+    h2 : La classe 3 compte le plus de victimes
+    h3 : Les personnes âgées entre 17 et 30 ans ont une chance de survie plus élevée 
+=> Autres hypothèses : 
+    h1 : les femmes ont plus de chance de survivre que les hommes 
+    h2 : le prix du ticket a une correlation avec la survie 
+    h3 :  les passagers ayant voyagé seuls ont moins de chances de survivre 
+    h4 : Une personne ayant embarquée depuis de C a plus de chances de survivre qu’une personne ayant embarquée depuis Q ou S
+=> Corrélation entre les variables catégorielles :
+    -Survided - Sibsp ⇒ On a une valeur negative donc il n’y a pas de corrélation entre ces valeurs
+    -Survived - Parch ⇒ Très faible
+    -Survided - Age ⇒ Negative
+    -Survivded - Fare ⇒ Plus le prix du ticket est élevé, plus les chances de survies le sont.
+    =>Résumé des analyses
+
+    Après analyse du dataset nous remarquons un grande quantité de valeurs manquantes sur les variables Age (177) et Cabin (687) et moins sur la variable Embarked (2). 62% des passagers ont péri et la majorité était des hommes.
+
+    Il faut aussi noter que la classe socio-économique d’un passager a une influence sur sa chance de survivre. À partir du prix du ticket, on peut deviner la classe socio-économique du passager et par la même occasion supposer que les personnes de première classe sont les riches.
+    => Encodage des variables catégorielles 
+  
